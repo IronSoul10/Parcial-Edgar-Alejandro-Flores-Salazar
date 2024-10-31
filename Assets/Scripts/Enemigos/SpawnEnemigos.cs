@@ -8,9 +8,7 @@ public class SpawnEnemigos : MonoBehaviour
     public Transform puntoInicio;
     public float velEnemigo;
     bool spawnActivo = true;
-
-    [HideInInspector]
-    public Vector3 posicion;
+    
     [HideInInspector]
     public Vector3 rotacion;
 
