@@ -5,7 +5,6 @@ using UnityEngine;
 public class SpawnEnemigos : MonoBehaviour
 {
     public GameObject enemigoPrefab;
-    public Transform puntoInicio;
     public float velEnemigo;
     bool spawnActivo = true;
     

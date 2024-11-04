@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
+
 
 public class Arma : MonoBehaviour
 {
@@ -29,7 +28,7 @@ public class Arma : MonoBehaviour
 
     void Disparar()
     {
-        GameObject clone = Instantiate(balaPrefab, puntoTiro.position, Quaternion.LookRotation(Vector3.forward));// bloque la direccion donde sale la bala para que sea siempre vienso hacia z
+        GameObject clone = Instantiate(balaPrefab, puntoTiro.position, Quaternion.LookRotation(Vector3.forward));// blmpre vienso hacia zoque la direccion donde sale la bala para que sea sie
         Rigidbody rb = clone.GetComponent<Rigidbody>();
         rb.AddForce(Vector3.forward * velocidadBala); //quite el transform.forward por que hacia contradireccion a la bala y no se movia
         Destroy(clone, 10);
